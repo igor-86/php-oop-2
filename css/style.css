@@ -1,0 +1,79 @@
+.my-container {
+    width: 100%;
+    background-color: black;
+    padding: 2rem 0;
+}
+
+
+
+.menu {
+    width: 50%;
+    height: 80px;
+
+}
+
+.img-logo {
+    width: 30%;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+h2,
+h3,
+p,
+h4 {
+    color: white;
+}
+
+/* Card */
+
+.card {
+    background-color: rgb(74, 74, 158);
+    width: 100%;
+    padding: 3rem 1rem;
+    border-radius: 4px;
+}
+
+.img-card {
+    width: 100%;
+    height: 200px;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.my-p-relative {
+    position: relative;
+}
+
+.category {
+    position: absolute;
+    background-color: black;
+    padding: .3rem 1rem;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    border-radius: 0 4px 0 0;
+}
+
+p {
+    margin-bottom: 0;
+    color: white;
+}
+
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
