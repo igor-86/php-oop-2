@@ -58,7 +58,7 @@ $array_product = [$products_one, $products_two, $products_three, $products_four,
                                 <h3 class="text-center mb-3"><?php echo $array_product[$i]->name ?></h3>
                                 <p class=" text-center mb-4"><?php echo $array_product[$i]->info ?></p>
                                 <div class="tecn d-flex justify-content-between mb-4">
-                                    <h4><?php echo $array_product[$i]->price ?></h4>
+                                    <h4><?php echo $array_product[$i]->price ?> &euro;</h4>
                                     <h4><?php echo $array_product[$i]->weight ?></h4>
                                 </div>
                                 <button class="btn btn-light position-absolute bottom-0 start-50 translate-middle"> Add</button>
