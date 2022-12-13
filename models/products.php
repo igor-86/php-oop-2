@@ -18,4 +18,13 @@ class Products
         $this->img = $img;
         $this->info = $info;
     }
+
+    public function isWeight()
+    {
+        if ($this->weight === "") {
+            throw new Exception("Non presente");
+        } else {
+            return $this->weight;
+        }
+    }
 }

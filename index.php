@@ -10,7 +10,7 @@ $products_one = new Products("Lettiera per gatti", 65, $cats, "15kg", "https://c
 $products_two = new Products("Osso gustoso", 8.99, $dog, "1kg", "https://i0.wp.com/topdogfood.it/wp-content/uploads/2021/01/1544-Osso-di-pelle-di-bufalo-per-cani-con-Trippa-Verde.jpg?fit=900%2C593&ssl=1", "Food");
 $products_three = new Products("Buddy", 22, $dog, "15kg", "https://www.modacani.it/prodotti/big/2520.jpg", "Food");
 $products_four = new Products("Casetta", 125.50, $cats, "20kg", "https://shop-cdn-m.mediazs.com/bilder/casetta/per/gatti/prince/7/400/37836_katzenhaus_prince_fg_4265_7.jpg", "Product");
-$products_five = new Products("Ball", 2.89, $dog, "0.1kg", "https://shop-cdn-m.mediazs.com/bilder/palla/trixie/con/fori/per/cani/ipovedenti/e/ciechi/6/400/211796_trixie_lochball_schelle_hs_05_6.jpg", "Toy");
+$products_five = new Products("Ball", 2.89, $dog, "", "https://shop-cdn-m.mediazs.com/bilder/palla/trixie/con/fori/per/cani/ipovedenti/e/ciechi/6/400/211796_trixie_lochball_schelle_hs_05_6.jpg", "Toy");
 $products_six = new Products("Jerry's", 11, $cats, "0.2kg", "https://m.media-amazon.com/images/I/41gH34Qi1aL._AC_SX425_.jpg", "Toy");
 $array_product = [$products_one, $products_two, $products_three, $products_four, $products_five, $products_six];
 
@@ -59,7 +59,12 @@ $array_product = [$products_one, $products_two, $products_three, $products_four,
                                 <p class=" text-center mb-4"><?php echo $array_product[$i]->info ?></p>
                                 <div class="tecn d-flex justify-content-between mb-4">
                                     <h4><?php echo $array_product[$i]->price ?> &euro;</h4>
-                                    <h4><?php echo $array_product[$i]->weight ?></h4>
+                                    <h4><?php try {
+                                            echo $array_product[$i]->isWeight();
+                                        } catch (Exception $ex) {
+                                            echo "Non presente";
+                                        }
+                                        ?></h4>
                                 </div>
                                 <button class="btn btn-light position-absolute bottom-0 start-50 translate-middle"> Add</button>
                             </div>
