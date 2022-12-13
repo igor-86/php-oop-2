@@ -28,3 +28,25 @@ class Products
         }
     }
 }
+
+/* Traits */
+
+trait LightFood
+{
+    public function isLight()
+    {
+        echo "Prodotto molto leggero";
+    }
+}
+
+class Light extends Products
+{
+    use LightFood;
+    public $light;
+
+    public function __construct($name, $price, Category $category, $weight, $img, $info, $light)
+    {
+        parent::__construct($name, $price, $category, $weight, $img, $info);
+        $this->light = $light;
+    }
+}

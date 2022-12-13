@@ -12,6 +12,8 @@ $products_three = new Products("Buddy", 22, $dog, "15kg", "https://www.modacani.
 $products_four = new Products("Casetta", 125.50, $cats, "20kg", "https://shop-cdn-m.mediazs.com/bilder/casetta/per/gatti/prince/7/400/37836_katzenhaus_prince_fg_4265_7.jpg", "Product");
 $products_five = new Products("Ball", 2.89, $dog, "", "https://shop-cdn-m.mediazs.com/bilder/palla/trixie/con/fori/per/cani/ipovedenti/e/ciechi/6/400/211796_trixie_lochball_schelle_hs_05_6.jpg", "Toy");
 $products_six = new Products("Jerry's", 11, $cats, "0.2kg", "https://m.media-amazon.com/images/I/41gH34Qi1aL._AC_SX425_.jpg", "Toy");
+$light = new Light("Barretta", 25, $cats, "", "", "Food", "Leggero");
+/* var_dump($light); */
 $array_product = [$products_one, $products_two, $products_three, $products_four, $products_five, $products_six];
 
 
